@@ -9,3 +9,5 @@ http://shunde.github.com/about.html
 http://shunde.github.com/atom.xml
 http://shunde.github.com/sitemap.txt
 http://shunde.github.com/categories.html
+
+http://shunde.github.com/%E9%9A%8F%E7%AC%94/2014/05/03/say-hello

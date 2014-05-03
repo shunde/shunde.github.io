@@ -25,7 +25,7 @@ tagline: Supporting tagline
 			</div>
 		</div>
 		<div class="meta">
-			<span class="notes-count"><a href="http://xiangjixuan.xiangjixuan1361584543563.tpl.diandian.com/post/2012-06-13/40028776394#notes">10&nbsp;热度</a></span>
+            <span class="notes-count"> <!-- --!> </span>
 			<span class="tags">
 				{% assign tags_list = post.tags %}
 				{% if site.JB.tags_list.provider == "custom" %}
@@ -62,7 +62,7 @@ tagline: Supporting tagline
   </li>
   {% endif %}
 
- 
+<!--  
     <li class="page">
       {% if paginator.page == 1 %}
       <span class="current-page">1</span>
@@ -70,7 +70,7 @@ tagline: Supporting tagline
       <a href="/">1</a>
       {% endif %}
     </li>
-
+--!>
     {% for count in (2..paginator.total_pages) %}
     <li class="page">
       {% if count == paginator.page %}
