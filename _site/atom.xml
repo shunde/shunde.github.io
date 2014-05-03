@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>德少的Blog</title>
+ <link href="http://shunde.github.com/atom.xml" rel="self"/>
+ <link href="http://shunde.github.com"/>
+ <updated>2014-05-03T21:43:09+08:00</updated>
+ <id>http://shunde.github.com</id>
+ <author>
+   <name>德少</name>
+   <email>shunde.cao@gmail.com</email>
+ </author>
+
+ 
+ 
+</feed>
