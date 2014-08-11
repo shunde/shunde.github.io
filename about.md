@@ -7,7 +7,7 @@ tagline: Supporting tagline
 
 ## 关于
 
-    var wuster = {
+    var ItBaker = {
         nickname     => "德少",
         gender       => "男",
         hobby        => "读书 | 旅游 | 跑步 | 技术",
