@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title></title>
+    <title>通过http代理服务器连接ssh && 通过ssh上传文件</title>
 	<meta name="author" content="德少" />
     <link rel="start" href="/" />
 	
@@ -35,33 +35,56 @@
 
 <ul id="post-list">
             
+			<span class="date" style="position: absolute; top: auto; bottom: auto;">
+                  <span class="month">Aug</span>
+                  <span class="day">02</span>
+               </span>
+            
 	<!--text-->
 		<li class="post text">
 			<div class="body">
 				
-				<h1 class="emphnext"></h1>
+				<h1 class="emphnext">通过http代理服务器连接ssh && 通过ssh上传文件</h1>
 
 
-  
-<h2 id="section">关于</h2>
+  <p>今天要将下载的数据集上传到服务器，但服务器没有连外网，需要通过一个http代理服务器才可以连接上，而ssh是不能直接设置代理服务器的，必须通过tunnel。</p>
 
-<pre><code>var ItBaker = {
-    nickname     =&gt; "德少",
-    gender       =&gt; "男",
-    hobby        =&gt; "读书 | 旅游 | 跑步 | 技术",
-    description  =&gt; "大四党，华中科技大学准研究僧一枚^_^ \
-                  爱技术，爱分享！\
-                  我会在这里记录学习和生活的点滴:)"
-}
-</code></pre>
-
-<h2 id="section-1">联系</h2>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>以下是在ubuntu上完成。</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
 
 <ul>
-  <li>Weibo: <a href="http://weibo.com/wustcsd/">@IT面包师</a>  </li>
-  <li>Github: http://shunde.github.com</li>
-</ul>
+  <li>
+    <p>通过http代理服务器连接ssh</p>
 
+    <ol>
+      <li>
+        <p>找个tunnel，比如corkscrew。</p>
+
+        <p>$sudo apt-get install corkscrew</p>
+      </li>
+      <li>
+        <p>编辑ssh配置文件。将下面代码写入到~/.ssh/config</p>
+
+        <p>Host *
+ ProxyCommand corkscrew proxy_server proxy_port %h %p</p>
+      </li>
+      <li>
+        <p>可以直接使用ssh了。</p>
+
+        <p>$ssh username@server</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>通过ssh上传文件到服务器
+ scp</p>
+  </li>
+</ul>
 
   <!-- JiaThis Button BEGIN -->
 <div id="ckepop">
@@ -75,6 +98,8 @@
   <BR/>
   <div class="prev-next">
   
+  
+    <a href="/%E9%9A%8F%E7%AC%94/2014/06/07/how_prejudice_destroy_a_programmer" class="prev" title="偏见是如何毁掉一个程序员的？">&larr; 向左走</a>
   
   </div>
 			</div>
