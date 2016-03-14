@@ -1,7 +1,7 @@
-# 德少的Blog 
+# C0d3r1991's Blog
 
-基于[Jekyll-Bootstrap](http://jekyllbootstrap.com)搭建的个人博客。主题fork自[joshualeung.github.com](https://github.com/joshualeung/joshualeung.github.com)。
+基于 [Jekyll](http://jekyllrb.com) + [Lanyon Theme](http://lanyon.getpoole.com/) 搭建的个人博客。
 
-## License
 
-[Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+> 记录生活学习的点滴
+> <3
